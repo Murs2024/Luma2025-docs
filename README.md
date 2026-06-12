@@ -52,7 +52,7 @@ python -m app.main
 pythonw -m app.main
 ```
 
-После запуска откроется браузер с дашбордом: **`http://localhost:5000`**
+После запуска откроется браузер с дашбордом: **`http://localhost:52025`**
 
 Также можно запустить двойным кликом по ярлыку **Luma2025** на рабочем столе.
 
@@ -60,7 +60,7 @@ pythonw -m app.main
 
 ## Веб-дашборд
 
-Открой `http://localhost:5000` в браузере:
+Открой `http://localhost:52025` в браузере:
 
 | Страница | Что показывает |
 |----------|---------------|
@@ -223,7 +223,7 @@ pyinstaller Luma2025.spec --noconfirm
 3. Получить `credentials.json` в [Google Cloud Console](https://console.cloud.google.com/apis/credentials)
 4. Запустить `Luma2025.exe`
 5. При первом запуске откроется браузер — авторизоваться в Google
-6. Готово — боты работают, дашборд на `http://localhost:5000`
+6. Готово — боты работают, дашборд на `http://localhost:52025`
 
 ---
 
