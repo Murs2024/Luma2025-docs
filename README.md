@@ -262,11 +262,18 @@ pip install -r requirements.txt
 1. **Telegram бот** — создать через [@BotFather](https://t.me/BotFather), получить токен
 1. **MAX бот** — получить токен из настроек канала в MAX
 1. **Google Calendar API** — создать проект в Google Cloud Console, скачать `credentials.json`
-1. **Опубликовать OAuth** (чтобы окно входа не выскакивало каждые 7 дней):
-   - Открыть [Google Cloud Console](https://console.cloud.google.com/apis/credentials/consent)
-   - Слева вкладка **«Аудитория»**
-   - Нажать **«Опубликовать приложение»** → статус «В производстве»
-   - 🔁 Повторить для каждого проекта (если Telegram и MAX используют разные Google-проекты)
+1. **Опубликовать OAuth** — чтобы окно входа не выскакивало каждые 7 дней.
+   Нужно сделать для обоих проектов (Telegram и MAX используют разные Google-аккаунты):
+
+   **Telegram:**
+   - Открыть [Google Cloud — Telegram](https://console.cloud.google.com/apis/credentials/consent?project=460773708593)
+   - Слева вкладка **«Аудитория»** → нажать **«Опубликовать приложение»**
+
+   **MAX:**
+   - Открыть [Google Cloud — MAX](https://console.cloud.google.com/apis/credentials/consent?project=752409691648)
+   - Слева вкладка **«Аудитория»** → нажать **«Опубликовать приложение»**
+
+   После публикации статус сменится на «В производстве» — токен будет жить постоянно.
 1. Создать `.env` файл с токенами (см. пример ниже)
 
 ```env
