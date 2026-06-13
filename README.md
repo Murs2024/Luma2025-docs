@@ -1,9 +1,8 @@
 # Luma2025 — умный планировщик для Telegram и Max
-n> 📖 Публичная документация. Исходный код: 🔒 [приватный репозиторий](https://github.com/Murs2024/Luma2025) | Демо по запросу
 
 Веб-приложение с фоновой работой: Google Calendar + Telegram + MAX + дашборд в браузере. Создано Ольгой Шевелевой.
 
-![Дашборд Luma2025](dashboard.png)
+![Дашборд Luma2025](screenshots/dashboard.png)
 
 ---
 
@@ -263,6 +262,11 @@ pip install -r requirements.txt
 1. **Telegram бот** — создать через [@BotFather](https://t.me/BotFather), получить токен
 1. **MAX бот** — получить токен из настроек канала в MAX
 1. **Google Calendar API** — создать проект в Google Cloud Console, скачать `credentials.json`
+1. **Опубликовать OAuth** (чтобы окно входа не выскакивало каждые 7 дней):
+   - Открыть [Google Cloud Console](https://console.cloud.google.com/apis/credentials/consent)
+   - Слева вкладка **«Аудитория»**
+   - Нажать **«Опубликовать приложение»** → статус «В производстве»
+   - 🔁 Повторить для каждого проекта (если Telegram и MAX используют разные Google-проекты)
 1. Создать `.env` файл с токенами (см. пример ниже)
 
 ```env
